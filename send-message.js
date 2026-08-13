@@ -1,6 +1,6 @@
-export async function onRequestPost(context) {
+export async function sendMessage(request, env) {
     try {
-        const formData = await context.request.formData();
+        const formData = await request.formData();
 
         const name = formData.get("name")?.toString().trim() || "";
         const company = formData.get("company")?.toString().trim() || "";
@@ -43,7 +43,7 @@ ${message}
         const response = await fetch("https://api.resend.com/emails", {
             method: "POST",
             headers: {
-                "Authorization": `Bearer ${context.env.RESEND_API_KEY}`,
+                "Authorization": `Bearer ${env.RESEND_API_KEY}`,
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -67,7 +67,7 @@ ${message}
         }
 
         return Response.redirect(
-            new URL("/thank-you.html", context.request.url),
+            new URL("/thank-you.html", request.url),
             303
         );
 
