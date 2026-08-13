@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky Petroleum Services LLC | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="logo-section">
+
+    <div class="contact-info">
+        <p>📞 (956) 683-1255</p>
+        <p>✉️ office@huskyps.com</p>
+    </div>
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Husky Petroleum Services LLC Logo">
+    </a>
+</div>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h2>Contact Husky Petroleum Services LLC</h2>
+        <p>
+            Have a job that needs to get done? Reach out and we'll get back to you as soon as possible — for emergencies, please call us directly.
+        </p>
+    </section>
+
+    <section class="contact-form-section">
+        <form class="contact-form" action="send-message.php" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option value="flowback">Flowback & Produced Water Hauling</option>
+                    <option value="tank-bottoms">Tank Bottoms & Sludge Removal</option>
+                    <option value="spill-response">Spill Response</option>
+                    <option value="tank-cleaning">Tank Cleaning</option>
+                    <option value="emergency">Emergency Dispatch</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-request">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Husky Petroleum Services LLC. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
