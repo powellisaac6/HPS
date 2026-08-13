@@ -27,7 +27,7 @@ body::before {
     align-items: center;
     justify-content: center;
     margin: 0;
-    position: relative; /* allows absolute positioning inside */
+    position: relative; /* allows absolute positioning inside. */
     overflow: hidden;
 }
 
