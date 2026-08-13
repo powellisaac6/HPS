@@ -2,12 +2,14 @@
   "name": "hps",
   "main": "worker.js",
   "compatibility_date": "2026-08-13",
+
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "binding": "ASSETS"
   },
 
   "observability": {
-    "enabled": false,
+    "enabled": true,
     "head_sampling_rate": 1,
     "logs": {
       "enabled": true,
@@ -22,4 +24,3 @@
     }
   }
 }
-
