@@ -39,7 +39,9 @@ Service Needed: ${service}
 Message:
 ${message}
         `;
-
+        console.log("About to call Resend");
+        console.log("API key exists:", !!env.RESEND_API_KEY);
+        
         const response = await fetch("https://api.resend.com/emails", {
             method: "POST",
             headers: {
