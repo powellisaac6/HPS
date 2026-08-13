@@ -1,13 +1,11 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "hps",
-  "main": "./_worker.js",
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "isaac",
   "compatibility_date": "2026-08-13",
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": ".",
-    "binding": "ASSETS"
+    "directory": "."
   }
 }
